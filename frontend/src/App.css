@@ -1,0 +1,140 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Body and App Layout */
+body {
+  background: linear-gradient(135deg, #f9f9f9, #d0e9f5);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* App Container */
+.App {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Registration Form Container */
+.form-container {
+  flex: 1;
+  max-width: 500px;
+}
+
+/* Form Box */
+.form-box {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #2b2d42;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Input Fields */
+input {
+  padding: 12px;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  font-size: 1em;
+  width: 100%;
+  outline: none;
+  background-color: #f0f7ff;
+  transition: border-color 0.3s ease;
+  margin-bottom: 15px;
+}
+
+input:focus {
+  border-color: #3f72af;
+}
+
+/* Submit Button */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  background-color: #3f72af;
+  color: white;
+}
+
+button:hover {
+  background-color: #2a4d76;
+  transform: translateY(-2px);
+}
+
+/* Registered Users List */
+.users-list-container {
+  flex: 1;
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2b2d42;
+  font-weight: 700;
+}
+
+/* List of Users */
+ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+}
+
+li {
+  background: #ffffff;
+  margin: 12px 0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+li div {
+  flex: 1;
+}
+
+li div p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.action-buttons{
+  display: flex;
+  /* margin: 10px; */
+  justify-content: space-between;
+}
+
+.action-buttons button{
+  margin: 10px;
+}
